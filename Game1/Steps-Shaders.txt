@@ -1,0 +1,36 @@
+Shaders Setup (2-ShaderSetup.zip)
+
+On Disk:
+1 - Unzip these files into your Game1 project
+    - Utility.cpp and h will be overwritten
+2 - Create a folder called `/Game/Data/Shaders`
+    - Create 2 text files called `Basic.vert` and `Basic.frag` in this folder
+        - These files will be empty for now
+
+In Code:
+3 - Premake
+    - Change premake5.lua so the shader files appear in our solution
+    - Look up what "debugdir" does in premake
+        - Add a debugdir line to the game project section set to the "Game" folder
+        - This change requires a manual reload of the solution
+    - Regenerate your projects
+
+4 - In the 'Framework' project:
+    - Update `Framework.h` with the new header so the game can see the ShaderProgram class
+
+5 - In the `Game` class:
+    - add a pointer to a ShaderProgram as a member variable (protected)
+        - call it m_pBasicShader
+
+6 - In `Game::Init`
+    - Instantiate the ShaderProgram
+        - Pass the names, including path, of the .vert and .frag file to the constructor
+        - Paths should be set relative to the `/Game` folder
+
+7 - Test everything
+    - There should be an assert triggered on either line 79 or 132 of shaderprogram.cpp
+        - This is because our vert/frag files are empty
+        - A different assert will trigger if the files on disk weren't found
+
+8 - In Visual Studio
+    - Install an extension called "GLSL Language Integration"

@@ -1,0 +1,14 @@
+~Game1~
+What is it?: This used to be the file used for Assignment 1. It is the basis for Assignment 2. I might experiment with this afterwards, but maybe not, considering we are getting into the nitty gritty of programming.
+
+GAME DESCRIPTION: In Shooting Gallery, how many enemies can you defeat? If your enemies go offscreen, they are destroyed, and won't be counted to your score. How many can you destroy?
+AUTHOR'S NOTES: Does not contain sophsiitcated A.I. Characrters that move horizontally are in the same umbrella. Same is said for the veritcal direction. For example, lefties and righties are the same type, while uppies and downies are the same type, if that makes sense.
+
+~Game2~
+What is it?: This is used for toying around with textures, spritesheets, among other things. Will be updated in the future, I am sure of it.
+
+~Game3~
+What is it?: I intend for Game3 to be the third assignment overall. This will be an original game, and will rely on some info from Game1 and Game2 to make work.
+
+~Game4~
+What is it?: I intend for it to be the final assignment of the entire class.
